@@ -1,0 +1,17 @@
+<div *ngIf="busStops" class="columns is-multiline">
+    <div *ngFor="let stop of busStops" class="column is-one-third" (click)="getSelectedStop(stop)">
+        <article class="notification" title="Click me for more information." [ngClass]="stop.selected === 1 ? 'is-success' : ''">
+            <p class="title">{{ stop.name }}</p>
+            <p class="subtitle">Distance: {{ stop.distance }} metres</p>
+            <!--
+            <div class="content">
+                <p>Direction: <strong>{{ degToCardinal(stop.bearing) }}</strong></p>
+            </div>
+            -->
+        </article>
+    </div>
+</div>
+
+<div *ngIf="busStops.length === 0">
+    <div class="notification">Default location is the <a href="https://fi.wikipedia.org/wiki/Manner-Suomen_keskipiste" target="_blank" nofollow noreferrer>geographical centre of Finland</a>.</div>
+</div>

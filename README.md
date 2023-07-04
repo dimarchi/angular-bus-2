@@ -1,27 +1,7 @@
-# AngularBus
+# angular-bus
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+## A short introduction
 
-## Development server
+Three closest bus stops to your location, with data from [digitransit.fi](https://digitransit.fi) (not complete, therefore), valid only in Finland as this uses data specific to Finland.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Documentation is usually behind the current commit. If so, the reason for this is that something is not finished or at the state I am not happy about it. Therefore until that is fixed the documentation will not reflect the current status. Currently, the documentation is not up-to-date due to addition of the *Update location* button.

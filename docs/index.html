@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Documentation</title>
+    </head>
+
+    <body>
+
+        <h1>Documentation</h1>
+
+        <p>This is an Angular project exploring <a href="https://leafletjs.com/">leaflet.js</a> and data from <a href="https://digitransit.fi/en/developers/">digitransit.fi</a>. As such, this is useful only in Finland.</p>
+
+        <p>Since this project uses (in desktop browsers) IP addresses for detecting your current location, it can be completely different from your actual location &mdash; your location is more accurately determined if you use your mobile phone's browser. You can also choose a random point on the map by double clicking it. That position may or may not have bus stops nearby within the search radius. In more remote areas the closer the location is to a road the more likely it is that bus stops are found. Determining your location precisely requires a secure connection, but apart from that this project works fine even if the connection is not secured.</p>
+
+        <p>The production build files in the dist folder have a base href of /bus. You may need to configure your server accordingly, as discussed in the Angular documentation regarding deployment. In my case, the server for my web pages is Apache, so I am using a .htaccess file with rewrite rules in the bus directory.</p>
+
+        <h2>Additional stuff used</h2>
+
+        <ul>
+            <li><a href="https://momentjs.com/">moment.js</a> for formatting time.</li>
+            <li><a href="https://github.com/pointhi/leaflet-color-markers">leaflet-color-markers</a>, blue and green markers.</li>
+            <li><a href="https://bulma.io/">Bulma</a> for styling the page.</li>
+            <li><a href="https://github.com/FortAwesome/angular-fontawesome">angular-fontawesome</a>, official Angular component for Font Awesome 5+.</li>
+        </ul>
+
+        <h2>Images</h2>
+
+        <ul>
+            <li><a href="images/default-view.png">Default view</a>. Starting point for this app.</li>
+            <li><a href="images/selected-current-location.png">Current or selected location</a>. The app has been given permission to detect your current location, or you have selected some point on the map. The three nearest bus stops are shown. Note that there may be stops with the same name - that means that the stop in question serves multiple purposes (such as long distance stop and local traffic stop) and are therefore considered separate entities as far as the data is concerned. One of these kinds of stops may return empty data sets. The small help or guide section is also visible due to user clicking the question mark icon.</li>
+            <li><a href="images/selected-stop.png">Selected stop</a>. In order to see busses serving that stop you need to select one of the three stops suggested. In addition to the busses you can also see timetables - or nothing at all depending on search results. The listings do not cover every possible bus route - only those that are in the digitransit database. Some of them are in real time, and some show just the expected scheduled time. You can update the timetables either by selecting a line or by clicking the Update timetable button. It is also possible that nothing is shown at all.</li>
+            <li><a href="images/zoomed-in.png">Zoomed in</a>. You can zoom in and out as usual in leaflet based apps.</li>
+        </ul>
+
+    </body>
+</html>

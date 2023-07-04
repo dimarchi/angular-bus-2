@@ -1,0 +1,21 @@
+<table class="table" *ngIf="timetable.length > 0">
+    <thead>
+        <tr>
+            <th>Bus head sign</th>
+            <th title="Scheduled arrival and departure time">Schedule</th>
+            <th title="Currently expected time if tracked in real time, empty otherwise">Real time</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let time of timetable">
+        <tr>
+            <td>{{ time.headsign }}</td>
+            <td>{{ time.scheduledDeparture }}</td>
+            <td *ngIf="time.realtime === true">{{ time.arrival }}</td>
+            <td *ngIf="time.realtime === false"> </td>
+        </tr>
+    </tbody>
+</table>
+
+<p *ngIf="timetable.length > 0" class="has-text-centered">
+    <button class="button is-info" (click)="updateTimeTable(selectedStop)">Update timetable</button>
+</p>

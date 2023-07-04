@@ -1,0 +1,14 @@
+<div>
+    <div class="helpcenter">
+        <fa-icon [icon]="faQuestionCircle" size="lg" (click)="toggle()" title="Guide to this web app."></fa-icon>
+    </div>
+    <div [ngClass]="visibilityCheck === 0 ? 'hidden' : 'shown'">
+        <div class="content">
+            <h2 class="subtitle">A small guide to this web app</h2>
+            <p>You can either allow location access or deny it. If you allow it this web app tries to find your current location. If you do not allow it nothing happens. In both cases you can freely select the location and zoom in and out.</p>
+            <p>Regardless of how the location is selected, the web app presents you with the three closest bus stops to the location above the map and in the map - provided they are within its search radius. Selecting one of the stops above map may or may not give you more detailed information in the form of <em>Busses stopping at the selected stop</em> and/or <em>Estimated timetable for the stop</em>. Some of the stops may even have the same name and perhaps some of them provide you with no information at all while others do. The reason for this is not entirely clear...</p>
+            <p>Some busses provide real time timetable data, some do not. If the former is true, you may see changes when clicking/tapping the <em>Update location</em> button.</p>
+            <p><strong>NOTE:</strong> something is delaying the location update. In Chrome based browsers it may not work at all, but manually selecting a location does work in them, too.</p>
+        </div>
+    </div>
+</div>

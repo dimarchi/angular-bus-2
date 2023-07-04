@@ -1,0 +1,29 @@
+.helpcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 2em;
+    padding-top: 0;
+    max-width: 2em;
+    max-height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.helpcenter:hover {
+    color: hsl(204, 86%, 53%);
+    cursor: pointer;
+}
+
+.shown {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.content {
+    margin-bottom: 1em;
+}

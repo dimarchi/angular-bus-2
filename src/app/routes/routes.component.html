@@ -1,0 +1,14 @@
+<div>
+    <table class="table" *ngIf="busses.length > 0">
+      <thead>
+        <tr><th>Line</th><th>Head sign</th><th>Route</th></tr>
+      </thead>
+      <tbody *ngFor="let bus of busses">
+      <tr (click)="routeClicked(bus)" [ngClass]="bus.selected === 1 ? 'selected-route' : ''">
+        <td>{{ bus.shortname }}</td>
+        <td>{{ bus.headsign }}</td>
+        <td>{{ bus.longname }}</td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
