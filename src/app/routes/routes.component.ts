@@ -3,9 +3,10 @@ import { DataService } from '../data-service.service';
 import { API_KEY } from '../../app/apikeys';
 
 @Component({
-  selector: 'app-routes',
-  templateUrl: './routes.component.html',
-  styleUrls: ['./routes.component.css']
+    selector: 'app-routes',
+    templateUrl: './routes.component.html',
+    styleUrls: ['./routes.component.css'],
+    standalone: false
 })
 export class RoutesComponent implements OnInit, OnChanges {
 

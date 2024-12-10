@@ -4,9 +4,10 @@ import { DataService } from '../data-service.service';
 import { API_KEY } from '../apikeys';
 
 @Component({
-  selector: 'app-timetable',
-  templateUrl: './timetable.component.html',
-  styleUrls: ['./timetable.component.css']
+    selector: 'app-timetable',
+    templateUrl: './timetable.component.html',
+    styleUrls: ['./timetable.component.css'],
+    standalone: false
 })
 export class TimetableComponent implements OnInit, OnChanges {
 

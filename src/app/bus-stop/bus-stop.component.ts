@@ -3,9 +3,10 @@ import * as L from 'leaflet';
 import { DataService } from '../data-service.service';
 
 @Component({
-  selector: 'app-bus-stop',
-  templateUrl: './bus-stop.component.html',
-  styleUrls: ['./bus-stop.component.css']
+    selector: 'app-bus-stop',
+    templateUrl: './bus-stop.component.html',
+    styleUrls: ['./bus-stop.component.css'],
+    standalone: false
 })
 export class BusStopComponent implements OnInit, OnChanges {
 

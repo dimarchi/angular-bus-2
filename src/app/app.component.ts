@@ -4,9 +4,10 @@ import { DataService } from '../app/data-service.service';
 import { API_KEY } from '../app/apikeys';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
+    standalone: false
 })
 export class AppComponent implements OnInit {
     constructor(private resetter: DataService) { }

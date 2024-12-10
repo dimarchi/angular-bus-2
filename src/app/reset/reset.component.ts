@@ -2,9 +2,10 @@ import { Component, Output, OnInit, EventEmitter } from '@angular/core';
 import { DataService } from '../data-service.service';
 
 @Component({
-  selector: 'app-reset',
-  templateUrl: './reset.component.html',
-  styleUrls: ['./reset.component.css']
+    selector: 'app-reset',
+    templateUrl: './reset.component.html',
+    styleUrls: ['./reset.component.css'],
+    standalone: false
 })
 export class ResetComponent implements OnInit {
 
