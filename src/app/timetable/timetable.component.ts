@@ -29,7 +29,7 @@ export class TimetableComponent implements OnInit, OnChanges {
   }
 
   updateTimeTable(stopID : any) {
-    const DIGITRANSIT_URL = 'https://api.digitransit.fi/routing/v1/routers/finland/index/graphql';
+    const DIGITRANSIT_URL = 'https://api.digitransit.fi/routing/v2/finland/gtfs/v1';
 
     // query from https://digitransit.fi/en/developers/apis/1-routing-api/stops/
     // Query scheduled departure and arrival times of a stop

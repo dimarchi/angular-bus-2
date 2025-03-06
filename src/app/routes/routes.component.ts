@@ -33,7 +33,7 @@ export class RoutesComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges() {
-    const DIGITRANSIT_URL = 'https://api.digitransit.fi/routing/v1/routers/finland/index/graphql';
+    const DIGITRANSIT_URL = 'https://api.digitransit.fi/routing/v2/finland/gtfs/v1';
 
     // query from https://digitransit.fi/en/developers/apis/1-routing-api/stops/
     // Query stop by ID and information about routes that go through it

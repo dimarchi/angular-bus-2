@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
     }
 
     getNearestBusStops(lat: number, lon: number) {
-        const DIGITRANSIT_URL = 'https://api.digitransit.fi/routing/v1/routers/finland/index/graphql';
+        const DIGITRANSIT_URL = 'https://api.digitransit.fi/routing/v2/finland/gtfs/v1';
 
         // query from https://digitransit.fi/en/developers/apis/1-routing-api/0-graphql/
         // modified
